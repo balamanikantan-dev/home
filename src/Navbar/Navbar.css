@@ -7,7 +7,7 @@ ul {
   }
   
   li {
-    float: left;
+    float: left
   }
   
   li a {
@@ -24,4 +24,10 @@ ul {
   
   .active {
     background-color: #4CAF50;
+  }
+  .navbar-fixed-top{
+    position: fixed;
+    top:0;
+    width: 100vw;
+    z-index: 100;
   }

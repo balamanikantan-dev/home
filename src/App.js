@@ -51,7 +51,7 @@ function App() {
         <p>Websites don't have to be static, I love<br></br>
                making pages come to life.</p>
       </div><br></br>
-      <h1 style={{ marginTop:"20px",  color: "gray", fontSize: "50px", textDecoration: "underline" }}>SKILLS</h1>
+      <h1 style={{ marginTop: "20px", color: "gray", fontSize: "50px", textDecoration: "underline" }}>SKILLS</h1>
       <div style={{ backgroundColor: "lightgrey", width: "96%", padding: "5px", margin: "20px" }}>
 
 
@@ -111,6 +111,7 @@ function App() {
               and when so the user wants the particular emoji if the user
               places the required emoji name in the search component the
                  required emoji would be reverted back to the user </p>
+              <a href="https://balamanikantan-dev.github.io/emoji" target="_blank">View Demo</a>
 
             </Card>
           </Col>

@@ -1,6 +1,7 @@
 {
   "name": "home",
   "version": "0.1.0",
+  "homepage": "https://balamanikantan-dev.github.io/",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.5.0",

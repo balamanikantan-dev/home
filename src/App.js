@@ -1,5 +1,5 @@
 import { BulbOutlined, ClockCircleOutlined, DesktopOutlined, GithubOutlined, MailOutlined, RocketOutlined } from '@ant-design/icons'
-import { Card, Col, Rate, Row } from 'antd';
+import { Card, Col, Rate, Row, Table } from 'antd';
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import './App.css';
 import './Navbar/Navbar.css'
@@ -7,6 +7,41 @@ import 'antd/dist/antd.css';
 
 
 function App() {
+  const columns = [
+    {
+      title: 'Name',
+      dataIndex: 'name',
+      key: 'name',
+
+    },
+    {
+      title: 'Rating',
+      dataIndex: 'rating',
+      key: 'rating',
+      render: text => <Rate disabled defaultValue={text} />,
+    }
+  ]
+  const data = [
+    {
+      key: '1',
+      name: 'HTML',
+      rating: 3,
+    },{
+      key: '2',
+      name: 'CSS',
+      rating: 3,
+    },
+    {
+      key: '3',
+      name: 'JAVASCRIPT',
+      rating: 3,
+    },
+    {
+      key: '4',
+      name: 'REACT.JS',
+      rating: 3,
+    }
+  ]
   return (
     <div className="App">
       <Element name="home" id="home" style={{ height: '100vh', display: 'flex' }}>
@@ -67,11 +102,9 @@ function App() {
 
 
 
-          <p style={{ fontSize: "40px" }}>CSS  -    <Rate disabled defaultValue={3} /></p>
-          <br></br>
-          <p style={{ fontSize: "40px" }}>HTML  - <Rate /></p><br></br>
-          <p style={{ fontSize: "40px" }}>JAVASCRIPT  -  <Rate /></p><br></br>
-          <p style={{ fontSize: "40px" }}>REACT- <Rate /></p>
+
+          
+          <Table pagination={false} columns={columns} dataSource={data} />
         </div>
 
       </Element>
